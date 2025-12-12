@@ -1,0 +1,9 @@
+entrypoint = "main.sql"
+run = "sqlite3 --init main.sql"
+modules = ["nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
+
+[agent]
+expertMode = true
